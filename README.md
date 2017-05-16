@@ -20,7 +20,7 @@ package org.aksw.simba.sqcbench.hierarchical
 public class Agglomerative
 However, Agglomerative clustering does not allow to generate fix number of clusters
 ```
-Note the SQCFramework requires the LSQ dataset endpoint URL to be provided as input. We have provided the Virtuoso 7.2 endpoints both for SWDF and DBpedia datasets which can be downloaded from [here](http://hobbitdata.informatik.uni-leipzig.de/qcframework-lsq-endpoints/).  
+Note the SQCFramework requires the LSQ dataset endpoint URL to be provided as input. We have provided the Virtuoso 7.2 endpoints both for SWDF and DBpedia datasets which can be downloaded from [here](http://hobbitdata.informatik.uni-leipzig.de/sqcframework-lsq-endpoints/).  
 Generating benchmarks using CLI will be added soon. 
 ### LSQ Datasets
 The LSQ datasets can be downloaded from [here](http://hobbitdata.informatik.uni-leipzig.de/lsq-dumps/)
