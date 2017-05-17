@@ -24,5 +24,7 @@ However, Agglomerative clustering does not allow to generate fix number of clust
 ```
 Note the SQCFramework requires the LSQ dataset endpoint URL to be provided as input. We have provided the Virtuoso 7.2 endpoints both for SWDF and DBpedia datasets which can be downloaded from [here](http://hobbitdata.informatik.uni-leipzig.de/sqcframework-lsq-endpoints/). The Windows virtuoso endpoint can be started from bin/start.bt while linux can be started from bin/start_virtuoso.sh.  
 Generating benchmarks using CLI will be added soon. 
+### SPARQL Containment Solvers
+We used four -- JSAC, TreeSolver, SPARQL-Algebra, AFMU -- SPARQL query containment solvers in our evaluation. Running these solvers can be found at [here](https://github.com/AKSW/jena-sparql-api/tree/master/benchmarking/sparqlqc-jena3). 
 ### LSQ Datasets
 The LSQ datasets can be downloaded from [here](http://hobbitdata.informatik.uni-leipzig.de/lsq-dumps/)
