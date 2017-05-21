@@ -7,7 +7,6 @@ Download the folder [SQCFrameWork-cli](https://github.com/AKSW/sqcframework/tree
 ```
 ### DBSCAN+Kmeans++ Format ### 
  java -jar sqcframwork.jar -m <method> -n <noQueries> -i <maxNoIterations> -t <noTrialRun> -e <endpointUrl> -q <queryPersonalized> -r <radius> -p <minPts> -o <outputFile>
-method = db+km++
 An example format: 
 java -jar sqcframework.jar   -m db+km++   -n 15   -i 10   -t 10   -e http://localhost:8890/sparql   -q ../SQCFramework/personalized-query.txt   -r 1   -p 1   -o db+km++-10supqueries-benchmark.ttl
 
