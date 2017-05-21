@@ -3,11 +3,34 @@ SQCFramework is SPARQL query containment benchmark generation framework which is
 ### Existing Benchmarks
 The existing benchmarks that we used in our evaluation is available from [here](https://github.com/AKSW/sqcframework/blob/master/SQCFrameWork-benchmarks.zip) 
 ### Generating Benchmarks from CLI
-
+Download the folder [SQCFrameWork-cli](https://github.com/AKSW/sqcframework/tree/master/SQCFrameWork-cli) which contains a runable jar sqcframework.jar and personalized-query.txt. From the folder run the following commands: 
 ```
 ### DBSCAN+Kmeans++ Format ### 
  java -jar sqcframwork.jar -m <method> -n <noQueries> -i <maxNoIterations> -t <noTrialRun> -e <endpointUrl> -q <queryPersonalized> -r <radius> -p <minPts> -o <outputFile>
 method = db+km++
+An example format: 
+java -jar sqcframework.jar   -m db+km++   -n 15   -i 10   -t 10   -e http://localhost:8890/sparql   -q ../SQCFramework/personalized-query.txt   -r 1   -p 1   -o db+km++-10supqueries-benchmark.ttl
+
+
+### Kmeans++ Format ### 
+ java -jar sqcframwork.jar -m <method> -n <noQueries> -i <maxNoIterations> -t <noTrialRun> -e <endpointUrl> -q <queryPersonalized> -o <outputFile>
+An example format: 
+java -jar sqcframework.jar   -m km++   -n 15   -i 10   -t 10   -e http://localhost:8890/sparql   -q ../SQCFramework/personalized-query.txt   -o km++-10supqueries-benchmark.ttl
+
+
+### FEASIBLE Format ### 
+ java -jar sqcframwork.jar -m <method> -n <noQueries> -e <endpointUrl> -q <queryPersonalized> -o <outputFile>
+An example format: 
+java -jar sqcframework.jar   -m feasible   -n 15  -e http://localhost:8890/sparql   -q ../SQCFramework/personalized-query.txt   -o feasible-10supqueries-benchmark.ttl
+
+
+### Agglomerative Format ### 
+ java -jar sqcframwork.jar -m <method> -n <noQueries> -e <endpointUrl> -q <queryPersonalized> -o <outputFile>
+An example format: 
+java -jar sqcframework.jar   -m agglomerative   -n 15  -e http://localhost:8890/sparql   -q ../SQCFramework/personalized-query.txt   -o agglomerative-10supqueries-benchmark.ttl
+
+Where
+
 noQueries = Number of super-queries in the benchmark
 maxNoIterations = Maximum number of iterations for the clustering algorithm
 noTrialRun = Number of trial run for the clustering algorithm
@@ -16,47 +39,6 @@ queryPersonalized = The personalized query for costum benchmark generation
 radius = Radius for the queries to be considered as outliers
 minPts = Minimum points or queries in a cluster
 outputFile = The output TTL file where the resulting benchmark will be printed
-
-An example format: 
-java -jar sqcframework.jar   -m db+km++   -n 15   -i 10   -t 10   -e http://localhost:8890/sparql   -q ../SQCFramework/personalized-query.txt   -r 1   -p 1   -o db+km++-10supqueries-benchmark.ttl
-
-
-### Kmeans++ Format ### 
- java -jar sqcframwork.jar -m <method> -n <noQueries> -i <maxNoIterations> -t <noTrialRun> -e <endpointUrl> -q <queryPersonalized> -o <outputFile>
-method = km++
-noQueries = Number of super-queries in the benchmark
-maxNoIterations = Maximum number of iterations for the clustering algorithm
-noTrialRun = Number of trial run for the clustering algorithm
-endpointURL = The LSQ endpoint URL containing containment relationships as well
-queryPersonalized = The personalized query for costum benchmark generation
-outputFile = The output TTL file where the resulting benchmark will be printed
-
-An example format: 
-java -jar sqcframework.jar   -m km++   -n 15   -i 10   -t 10   -e http://localhost:8890/sparql   -q ../SQCFramework/personalized-query.txt   -o km++-10supqueries-benchmark.ttl
-
-
-### FEASIBLE Format ### 
- java -jar sqcframwork.jar -m <method> -n <noQueries> -e <endpointUrl> -q <queryPersonalized> -o <outputFile>
-method = feasible
-noQueries = Number of super-queries in the benchmark
-endpointURL = The LSQ endpoint URL containing containment relationships as well
-queryPersonalized = The personalized query for costum benchmark generation
-outputFile = The output TTL file where the resulting benchmark will be printed
-
-An example format: 
-java -jar sqcframework.jar   -m feasible   -n 15  -e http://localhost:8890/sparql   -q ../SQCFramework/personalized-query.txt   -o feasible-10supqueries-benchmark.ttl
-
-
-### Agglomerative Format ### 
- java -jar sqcframwork.jar -m <method> -n <noQueries> -e <endpointUrl> -q <queryPersonalized> -o <outputFile>
-method = agglomerative
-noQueries = Number of super-queries in the benchmark
-endpointURL = The LSQ endpoint URL containing containment relationships as well
-queryPersonalized = The personalized query for costum benchmark generation
-outputFile = The output TTL file where the resulting benchmark will be printed
-
-An example format: 
-java -jar sqcframework.jar   -m agglomerative   -n 15  -e http://localhost:8890/sparql   -q ../SQCFramework/personalized-query.txt   -o agglomerative-10supqueries-benchmark.ttl
 
 ```
 ### Generating Benchmarks from Source 
