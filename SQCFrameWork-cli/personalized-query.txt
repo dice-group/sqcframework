@@ -1,0 +1,17 @@
+Prefix lsq: <http://lsq.aksw.org/vocab#>
+SELECT  DISTINCT ?sup count(DISTINCT ?sub) as ?entailments ?projVars ?bgps ?tps ?joinVertices ?maxBGPTriples ?minBGPTriples ?meanJoinVertexDegree count(?feature) as ?noFeatures
+{
+?sub  lsq:isEntailed ?sup . 
+#?sup lsq:text ?supText .
+#?sub lsq:text ?subText .
+?sup  lsq:hasStructuralFeatures ?sf .
+?sf   lsq:projectVars ?projVars . 
+?sf   lsq:bgps ?bgps . 
+?sf   lsq:tps ?tps .
+?sf   lsq:joinVertices ?joinVertices . 
+?sf   lsq:maxBGPTriples ?maxBGPTriples . 
+?sf   lsq:minBGPTriples ?minBGPTriples . 
+?sf   lsq:meanJoinVertexDegree ?meanJoinVertexDegree .
+?sf   lsq:usesFeature  ?feature 
+FILTER (str(?sub) != str(?sup) )
+}
