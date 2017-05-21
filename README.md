@@ -31,12 +31,12 @@ java -jar sqcframework.jar   -m agglomerative   -n 15  -e http://localhost:8890/
 Where
 
 noQueries = Number of super-queries in the benchmark
-maxNoIterations = Maximum number of iterations for the clustering algorithm
-noTrialRun = Number of trial run for the clustering algorithm
+maxNoIterations = Maximum number of iterations for the KMeans++ clustering algorithm. In our evaluation we used maxNoIterations = 10. 
+noTrialRun = Number of trial run for the KMeans++ clustering algorithm. In our evaluation we used noTrialRun = 10.
 endpointURL = The LSQ endpoint URL containing containment relationships as well
 queryPersonalized = The personalized query for costum benchmark generation
-radius = Radius for the queries to be considered as outliers
-minPts = Minimum points or queries in a cluster
+radius = Radius for the queries to be considered as outliers. In our evaluation we used radius = 1
+minPts = Minimum points or queries in a cluster. In our evaluation we used min. points = 1
 outputFile = The output TTL file where the resulting benchmark will be printed
 
 ```
