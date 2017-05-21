@@ -66,7 +66,7 @@ Generating benchmarks using CLI will be added soon.
 We used four -- JSAC, TreeSolver, SPARQL-Algebra, AFMU -- SPARQL query containment solvers in our evaluation. Running these solvers can be found at [here](https://github.com/AKSW/jena-sparql-api/tree/master/benchmarking/sparqlqc-jena3). 
 ### LSQ Datasets
 The LSQ datasets can be downloaded from [here](http://hobbitdata.informatik.uni-leipzig.de/lsq-dumps/)
-###Authors
+### Authors
   * [Muhammad Saleem](https://sites.google.com/site/saleemsweb/) (AKSW, University of Leipzig) 
   * [Claus Stadler](http://aksw.org/ClausStadler.html) (AKSW, University of Leipzig)
   * [Jens Lehmann](http://jens-lehmann.org/) (University of Bonn)
