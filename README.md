@@ -3,7 +3,7 @@ SQCFramework is SPARQL query containment benchmark generation framework which is
 ### Existing Benchmarks
 The existing benchmarks that we used in our evaluation is available from [here](https://github.com/AKSW/sqcframework/blob/master/SQCFrameWork-benchmarks.zip) 
 ### Generating Benchmarks from CLI
-Download the folder [SQCFrameWork-cli](https://github.com/AKSW/sqcframework/tree/master/SQCFrameWork-cli) which contains a runable jar sqcframework.jar and personalized-query.txt. From the folder run the following commands: 
+Download the folder [SQCFrameWork-cli](https://github.com/AKSW/sqcframework/tree/master/SQCFrameWork-cli) which contains a runable jar sqcframework.jar and a comtomized benchmark generation query file personalized-query.txt. From the folder run the following commands: 
 ```
 ### DBSCAN+Kmeans++ Format ### 
  java -jar sqcframwork.jar -m <method> -n <noQueries> -i <maxNoIterations> -t <noTrialRun> -e <endpointUrl> -q <queryPersonalized> -r <radius> -p <minPts> -o <outputFile>
