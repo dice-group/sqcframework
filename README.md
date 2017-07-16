@@ -1,7 +1,7 @@
 ### SQCFramework: The SPARQL Queries Containment Benchmark Generation Framework 
 SQCFramework is SPARQL query containment benchmark generation framework which is able to generate customized SPARQL containment benchmarks from real SPARQL query logs. The framework is flexible enough to generate benchmarks of varying sizes and according to the user-defined criteria on the most important SPARQL features to be considered for query containment benchmarking. The generation of benchmarks is achieved by selecting prototypical queries (of a user-defined size and specialized selection criteria) using different clustering algorithms. 
 ### Existing Benchmarks
-The existing benchmarks that we used in our evaluation is available from [here](https://github.com/AKSW/sqcframework/blob/master/SQCFrameWork-benchmarks.zip) 
+The existing benchmarks that we used in our evaluation is available from [here](https://github.com/AKSW/sqcframework/blob/master/SQCFrameWork-benchmarks.7z) 
 ### Generating Benchmarks from CLI
 Download the folder [SQCFrameWork-cli](https://github.com/AKSW/sqcframework/tree/master/SQCFrameWork-cli) which contains a runable jar sqcframework.jar and a comtomized benchmark generation query file personalized-query.txt. Note the SQCFramework requires the LSQ dataset endpoint URL to be provided as input. We have provided the Virtuoso 7.2 endpoints both for SWDF and DBpedia datasets which can be downloaded from [here](http://hobbitdata.informatik.uni-leipzig.de/sqcframework-lsq-endpoints/). The Windows virtuoso endpoint can be started from bin/start.bt while linux can be started from bin/start_virtuoso.sh.  
 From the folder run the following commands: 
