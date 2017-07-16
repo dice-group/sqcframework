@@ -7,7 +7,7 @@ The existing benchmarks that we used in our evaluation is available from [here](
 ### Generating Benchmarks from CLI
 Download the folder [SQCFrameWork-cli](https://github.com/AKSW/sqcframework/tree/master/SQCFrameWork-cli) which contains a runable jar sqcframework.jar and a comtomized benchmark generation query file personalized-query.txt. Note the SQCFramework requires the LSQ dataset endpoint URL to be provided as input. We have provided the Virtuoso 7.2 endpoints both for SWDF and DBpedia datasets which can be downloaded from [here](http://hobbitdata.informatik.uni-leipzig.de/sqcframework-lsq-endpoints/). The Windows virtuoso endpoint can be started from bin/start.bt while linux can be started from bin/start_virtuoso.sh.  
 From the folder run the following commands: 
-```js
+```html
 ### DBSCAN+Kmeans++ Format ### 
  java -jar sqcframwork.jar -m <method> -n <noQueries> -i <maxNoIterations> -t <noTrialRun> -e <endpointUrl> -q <queryPersonalized> -r <radius> -p <minPts> -o <outputFile>
 An example format: 
