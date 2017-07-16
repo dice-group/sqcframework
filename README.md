@@ -70,6 +70,14 @@ public class DbscanAndKMeansPluPlus
 package org.aksw.simba.sqcframework.feasible
 public class FEASIBLEClustering 
 
+//Generate FEASIBLE-Exemplars benchmarks from 
+package org.aksw.simba.sqcframework.feasible
+public class FeasibleExemplars
+
+//Generate Random selection benchmarks from 
+package org.aksw.simb.sqcbench.random
+public class RandomSelection
+
 //You can also generate Agglomerative benchmarks from 
 package org.aksw.simba.sqcbench.hierarchical
 public class Agglomerative
