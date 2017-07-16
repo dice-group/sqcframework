@@ -11,25 +11,37 @@ From the folder run the following commands:
 ### DBSCAN+Kmeans++ Format ### 
  java -jar sqcframwork.jar -m <method> -n <noQueries> -i <maxNoIterations> -t <noTrialRun> -e <endpointUrl> -q <queryPersonalized> -r <radius> -p <minPts> -o <outputFile>
 An example format: 
-java -jar sqcframework.jar   -m db+km++   -n 15   -i 10   -t 10   -e http://localhost:8890/sparql   -q ../SQCFramework/personalized-query.txt   -r 1   -p 1   -o db+km++-10supqueries-benchmark.ttl
+java -jar sqcframework.jar   -m db+km++   -n 10   -i 10   -t 10   -e http://localhost:8890/sparql   -q ../SQCFramework/personalized-query.txt   -r 1   -p 1   -o db+km++-10supqueries-benchmark.ttl
 
 
 ### Kmeans++ Format ### 
  java -jar sqcframwork.jar -m <method> -n <noQueries> -i <maxNoIterations> -t <noTrialRun> -e <endpointUrl> -q <queryPersonalized> -o <outputFile>
 An example format: 
-java -jar sqcframework.jar   -m km++   -n 15   -i 10   -t 10   -e http://localhost:8890/sparql   -q ../SQCFramework/personalized-query.txt   -o km++-10supqueries-benchmark.ttl
+java -jar sqcframework.jar   -m km++   -n 10   -i 10   -t 10   -e http://localhost:8890/sparql   -q ../SQCFramework/personalized-query.txt   -o km++-10supqueries-benchmark.ttl
 
 
 ### FEASIBLE Format ### 
  java -jar sqcframwork.jar -m <method> -n <noQueries> -e <endpointUrl> -q <queryPersonalized> -o <outputFile>
 An example format: 
-java -jar sqcframework.jar   -m feasible   -n 15  -e http://localhost:8890/sparql   -q ../SQCFramework/personalized-query.txt   -o feasible-10supqueries-benchmark.ttl
+java -jar sqcframework.jar   -m feasible   -n 10  -e http://localhost:8890/sparql   -q ../SQCFramework/personalized-query.txt   -o feasible-10supqueries-benchmark.ttl
 
 
 ### Agglomerative Format ### 
  java -jar sqcframwork.jar -m <method> -n <noQueries> -e <endpointUrl> -q <queryPersonalized> -o <outputFile>
 An example format: 
-java -jar sqcframework.jar   -m agglomerative   -n 15  -e http://localhost:8890/sparql   -q ../SQCFramework/personalized-query.txt   -o agglomerative-10supqueries-benchmark.ttl
+java -jar sqcframework.jar   -m agglomerative   -n 10  -e http://localhost:8890/sparql   -q ../SQCFramework/personalized-query.txt   -o agglomerative-10supqueries-benchmark.ttl
+
+
+### FEASIBLE-Exemplars Format ### 
+ java -jar sqcframwork.jar -m <method> -n <noQueries> -e <endpointUrl> -q <queryPersonalized> -o <outputFile>
+An example format: 
+java -jar sqcframework.jar   -m feasible-exmp   -n 10  -e http://localhost:8890/sparql   -q ../SQCFramework/personalized-query.txt   -o feasible-exmp-10supqueries-benchmark.ttl
+
+
+### Random Selection Format ### 
+ java -jar sqcframwork.jar -m <method> -n <noQueries> -e <endpointUrl> -q <queryPersonalized> -o <outputFile>
+An example format: 
+java -jar sqcframework.jar   -m random   -n 10  -e http://localhost:8890/sparql   -q ../SQCFramework/personalized-query.txt   -o random-10supqueries-benchmark.ttl
 
 Where
 
