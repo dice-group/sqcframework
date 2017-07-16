@@ -53,7 +53,7 @@ outputFile = The output TTL file where the resulting benchmark will be printed
 
 ```
 ### Generating Benchmarks from Source 
-Download the source code from [here](https://github.com/AKSW/sqcframework/blob/master/SQCFramwework-src.7z). Unzip the folder which contains 4 -- Agglomerative, commons-math3, FEASIBLE, SQCFramework -- java projects. SQCFramework is the main project from where benchmarks can be generated. Note this project requires the other 3 project to be included in the build path. 
+Download the source code from [here](https://github.com/AKSW/sqcframework/blob/master/SQCFramework-src.7z). Unzip the folder which contains 4 -- Agglomerative, commons-math3, FEASIBLE, SQCFramework -- java projects. SQCFramework is the main project from where benchmarks can be generated. Note this project requires the other 3 project to be included in the build path. 
 ```
 //Generate KMeans++ benchmarks from 
 package org.aksw.simba.sqcbench.centroid
